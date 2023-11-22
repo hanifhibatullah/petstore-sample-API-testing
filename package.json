@@ -1,0 +1,30 @@
+{
+  "name": "petstore-sample-api-testing",
+  "version": "1.0.0",
+  "description": "mocha chai petStore example",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "test get": "mocha test/api/getTesting.js",
+    "test post": "mocha test/api/postTesting.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hanifhibatullah/petstore-sample-API-testing.git"
+  },
+  "author": "muhammad hanif hibatullah",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hanifhibatullah/petstore-sample-API-testing/issues"
+  },
+  "homepage": "https://github.com/hanifhibatullah/petstore-sample-API-testing#readme",
+  "dependencies": {
+    "chai": "^4.3.10",
+    "mocha": "^10.2.0",
+    "mochawesome": "^7.1.3",
+    "supertest": "^6.3.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.23.3"
+  }
+}
