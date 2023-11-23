@@ -2,14 +2,14 @@
   "stats": {
     "suites": 1,
     "tests": 2,
-    "passes": 1,
+    "passes": 2,
     "pending": 0,
-    "failures": 1,
-    "start": "2023-11-22T10:43:20.610Z",
-    "end": "2023-11-22T10:43:23.129Z",
-    "duration": 2519,
+    "failures": 0,
+    "start": "2023-11-23T03:00:28.380Z",
+    "end": "2023-11-23T03:00:29.972Z",
+    "duration": 1592,
     "testsRegistered": 2,
-    "passPercent": 50,
+    "passPercent": 100,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "df7311e0-3c0f-4468-9b5e-25642825cc9c",
+      "uuid": "0db5413d-c2b1-4b33-9b16-1a0e522149ec",
       "title": "",
       "fullFile": "C:\\Users\\mhani\\Magang\\Portofolio QA\\petstore-sample-API-testing\\test\\api\\chaiAssert.js",
       "file": "\\test\\api\\chaiAssert.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "16dc04bb-8ae6-465b-b38d-c3a5c5e71af4",
+          "uuid": "453d89e5-0d44-4255-9f47-5ecc78336fff",
           "title": "Post Request",
           "fullFile": "C:\\Users\\mhani\\Magang\\Portofolio QA\\petstore-sample-API-testing\\test\\api\\chaiAssert.js",
           "file": "\\test\\api\\chaiAssert.js",
@@ -37,22 +37,18 @@
             {
               "title": "response status equal to 200",
               "fullTitle": "Post Request response status equal to 200",
-              "timedOut": true,
-              "duration": 2011,
-              "state": "failed",
-              "speed": null,
-              "pass": false,
-              "fail": true,
+              "timedOut": false,
+              "duration": 1586,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
               "pending": false,
               "context": null,
               "code": "//check response status\nexpect((await response).status).to.equal(200)",
-              "err": {
-                "message": "Error: Timeout of 2000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (C:\\Users\\mhani\\Magang\\Portofolio QA\\petstore-sample-API-testing\\test\\api\\chaiAssert.js)",
-                "estack": "Error: Timeout of 2000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (C:\\Users\\mhani\\Magang\\Portofolio QA\\petstore-sample-API-testing\\test\\api\\chaiAssert.js)\n    at listOnTimeout (node:internal/timers:573:17)\n    at process.processTimers (node:internal/timers:514:7)",
-                "diff": null
-              },
-              "uuid": "2cfd53a0-3bb8-4747-bf02-54347fb6d8e5",
-              "parentUUID": "16dc04bb-8ae6-465b-b38d-c3a5c5e71af4",
+              "err": {},
+              "uuid": "f8ca430e-b760-476c-8fb9-72c59646efa3",
+              "parentUUID": "453d89e5-0d44-4255-9f47-5ecc78336fff",
               "isHook": false,
               "skipped": false
             },
@@ -60,31 +56,30 @@
               "title": "response body to haveOwnProperty",
               "fullTitle": "Post Request response body to haveOwnProperty",
               "timedOut": false,
-              "duration": 500,
+              "duration": 1,
               "state": "passed",
-              "speed": "slow",
+              "speed": "fast",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
               "code": "//expext value \"message\" in body response\nexpect((await response).body).to.haveOwnProperty('message')",
               "err": {},
-              "uuid": "6ce8b9a8-38eb-46ae-bb15-1e48b4f4b7cc",
-              "parentUUID": "16dc04bb-8ae6-465b-b38d-c3a5c5e71af4",
+              "uuid": "564a9c83-9bf3-4578-9a36-f5fd1ce97c0a",
+              "parentUUID": "453d89e5-0d44-4255-9f47-5ecc78336fff",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "6ce8b9a8-38eb-46ae-bb15-1e48b4f4b7cc"
+            "f8ca430e-b760-476c-8fb9-72c59646efa3",
+            "564a9c83-9bf3-4578-9a36-f5fd1ce97c0a"
           ],
-          "failures": [
-            "2cfd53a0-3bb8-4747-bf02-54347fb6d8e5"
-          ],
+          "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 2511,
+          "duration": 1587,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

@@ -18,4 +18,25 @@ describe('Post Request Testing', () => {
         console.log((await response).status)
         console.log((await response).body)
     })
-})
+    it('Success create pet', async() => {
+        const response = request(baseUrl()).post('/pet')
+        .send({
+            "id" : 1,
+            "category" : {
+                "id" : 1,
+                "name" : "bulldog"
+            },
+            "name" : "mr bark",
+            "photoUrls" : [],
+            "tags" : [
+                {
+                    "id" : 1,
+                    "name" : "doggie"
+                }
+            ],
+            "status" : "available"
+            })
+            console.log((await response).status)
+            console.log((await response).body)
+        })
+    })
